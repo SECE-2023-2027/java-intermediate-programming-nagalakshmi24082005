@@ -4,16 +4,12 @@ public class Product {
     private String productName;
     private double price;
     private int stockQuantity;
-
-    // Parameterized Constructor
     public Product(String productId, String productName, double price, int stockQuantity) {
         this.productId = productId;
         this.productName = productName;
         setPrice(price);
         setStockQuantity(stockQuantity);
     }
-
-    // Getters
     public String getProductId() {
         return productId;
     }
@@ -30,7 +26,6 @@ public class Product {
         return stockQuantity;
     }
 
-    // Setters
     public void setProductId(String productId) {
         this.productId = productId;
     }
@@ -53,7 +48,6 @@ public class Product {
             this.stockQuantity = stockQuantity;
     }
 
-    // Apply Discount
     public void applyDiscount(double percentage) {
         price = price - (price * percentage / 100);
     }
