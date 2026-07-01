@@ -2,14 +2,10 @@ public class Student {
 
     private String name;
     private int[] marks;
-
-    // Parameterized Constructor
     public Student(String name, int[] marks) {
         this.name = name;
         this.marks = marks;
     }
-
-    // Method to calculate average
     public double calculateAverage() {
 
         if (marks == null || marks.length == 0) {
@@ -25,7 +21,7 @@ public class Student {
         return (double) sum / marks.length;
     }
 
-    // Getter
+
     public String getName() {
         return name;
     }
